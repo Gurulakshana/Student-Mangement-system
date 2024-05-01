@@ -1,0 +1,50 @@
+#div1{
+    width: 30%;
+    height: 70%;
+    border-radius: 10px;
+    color: black;
+    background-color: blanchedalmond;
+    align-items: center;
+    margin-top: 5%;
+}
+h1{
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+td{
+    margin: 10%;
+    margin-bottom: 10%;
+    padding: 1%;
+    font-size: 20px;
+    padding-left: 5%;
+    align-items: center;
+}
+#div{
+    width: 70%;
+    height:fit-content;
+    border-radius: 10px;
+    color: black;
+    background-color: rgb(144, 205, 233);
+    margin-top: 5%;
+    align-items: center;
+}
+
+th{
+    margin: 10%;
+    margin-bottom: 10%;
+    padding-bottom: 3%;
+    font-size: 20px;
+    padding-left: 5%;
+    width: 4%;
+    height: 10px;
+    align-items: center;
+    padding: 1%;
+}
+#button{
+    width: 100%;
+    margin: 3%;
+    background-color: black;
+    color: white;
+    align-items: center;
+
+}

@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <center>
+        <div id="div1">
+            <h1>STUDENT FORM</h1>
+            <form id="mainForm" name="mainForm">
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td><input id="num" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td >
+                            <input type="radio" name="option" value="Male">Male
+                            <input type="radio" name="option" value="female">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Class</td>
+                        <td><input type="number" id="class"></td>
+                    </tr>
+                    <tr>
+                        <td>Register Number</td>
+                        <td><input id="register" type="number"></td>
+                    </tr>
+                    <tr><td colspan="2"><button onclick="save()" id="button">Save</button></td></tr>
+                </table>
+            </form>
+        </div>
+    </center>
+    
+    <center>
+        <div id="div">
+            <table id="table1" border="1">
+                <thead id="head">
+                    <th><b>Name</b></th>
+                    <th><b>Age</b></th>
+                    <th><b>Gender</b></th>
+                    <th><b>Class</b></th>
+                    <th><b>Register Number</b></th>
+                </thead>
+                <tr>
+                    <td>Hari</td>
+                    <td>18</td>
+                    <td>male</td>
+                    <td>12</td>
+                    <td>5476</td>
+                </tr>
+            </table>
+        </div>
+    </center>
+</body>
+</html>
+<script>
+    var count=0
+    function save()
+    {
+        event.preventDefault()
+        count++
+        var nam=document.getElementById("name")
+        var name=String(nam.value)
+        var nu=document.getElementById("num")
+        var num=Number(nu.value)
+        var radVal=document.mainForm.option.value;
+        var gen=radVal
+        var cls=document.getElementById("class")
+        var clas=Number(cls.value)
+        var reg=document.getElementById("register")
+        var register=Number(reg.value)
+        var tr=document.createElement("tr");
+        var td=document.createElement("td")
+        tr.innerHTML=`<td>${name}</td><td>${num}</td><td>${gen}</td><td>${clas}</td><td>${register}</td>`
+        document.getElementById("table1").appendChild(tr)
+    }
+</script>
